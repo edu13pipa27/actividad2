@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>VIC-Tacos XXL | El sabor de México en Osona</title>
+	<!-- Linkeamos la Font de Google Gowun Dodum para poder usarla -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<script src="js/Scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://kit.fontawesome.com/186fb64a36.js" crossorigin="anonymous"></script>
+	<link rel="preload" as="image" href="media/hero_image_2.jpg">
+	<link rel="preload" as="image" href="media/Carrusel2.jpg">
+	<link rel="preload" as="image" href="media/Carrusel3.jpg">
+
+</head>
+<body>
+
+	<div id="modalFull">
+		<div id="modalWelcome">
+			<h1>Bienvenido a <br> VIC-TACOS XXL</h1>
+			<button onclick="closeModalW()">EMPIEZA A PEDIR</button>
+		</div>
+	</div>
+	
+	<header id="encabezado">
+
+		<div id="fondoCarru1" class="fondosCarru"></div>
+		<div id="fondoCarru2" class="fondosCarru"></div>
+		<div id="fondoCarru3" class="fondosCarru"></div>
+
+		<nav id="navBar">
+
+			<a href="index.html">
+				<img src="media/Logo.jpg" id="logo">
+			</a>
+
+			<ul id="menu">
+				<li class="elementoMenu"><a href="#carta">Carta</a>
+					<ul id="subMenu">
+						<li class="opcionSub"><a href="#carta" onclick="marcarPestana('containerTacos','tabTacos')">Tacos</a></li>
+						<li class="opcionSub"><a href="#carta" onclick="marcarPestana('containerBurritos','tabBurritos')">Burritos</a></li>
+						<li class="opcionSub"><a href="#carta" onclick="marcarPestana('containerPostres','tabPostres')">Postres</a></li>
+					</ul>
+				</li>
+				<li class="elementoMenu"><a href="#reserva">Reserva</a></li>
+				<li class="elementoMenu"><a href="#galeria">Galería</a></li>
+				<li class="elementoMenu"><a href="#filosofia">Filosofía</a></li>
+				<li class="elementoMenu"><a href="#pie">RRSS</a></li>
+			</ul> 
+
+		</nav>
+
+		<h1 id="tituloEncabezado">VIC-TacosXXL</h1>
+		<h3 contenteditable id="subtituloEncabezado">El <span id="palabraAnimada">sabor</span> de <span id="palabraAnimada2">MÉXICO</span> en <span id="palabraAnimada3">Osona</span></h3>
+		
+	</header>
+
+	<section id="carta">
+
+		<h2 data-aos="fade-right" class="tituloSeccionClara">Nuestra Carta</h2>
+
+		<div id="containerTagsPestanas">
+			<p class="etiquetaPestana pestanaActiva" id="tabTacos" onclick="marcarPestana('containerTacos','tabTacos')">Tacos</p>
+			<p class="etiquetaPestana" id="tabBurritos" onclick="marcarPestana('containerBurritos','tabBurritos')">Burritos</p>
+			<p class="etiquetaPestana" id="tabPostres" onclick="marcarPestana('containerPostres','tabPostres')">Postres</p>
+		</div>
+		<div class="containerPestana" id="containerTacos">
+			<div class="plato">
+				<div class="imgPlato">
+					<img src="media/Classic_Taco.jpg">
+				</div>
+				<p class="nombrePlato">Taco Clásico</p>
+				<p class="precioPlato">4,99 €</p>
+			</div>
+			<div class="plato">
+				<div class="imgPlato">
+					<img src="media/Taco Especial Vic.jpg">
+				</div>
+				<p class="nombrePlato">Taco Especial VIC</p>
+				<p class="precioPlato">5,99 €</p>
+			</div>
+			<div class="plato">
+				<div class="imgPlato">
+					<img src="media/Black Taco.jpg">
+				</div>
+				<p class="nombrePlato">Taco Black</p>
+				<p class="precioPlato">5,49 €</p>
+			</div>
+			<div class="plato">
+				<div class="imgPlato">
+					<img src="media/Pulled-Pork-Taco.jpg">
+				</div>
+				<p class="nombrePlato">Taco Pulled-Pork</p>
+				<p class="precioPlato">6,49 €</p>
+			</div>
+			<div class="plato">
+				<div class="imgPlato">
+					<img src="media/Hot_Hot_Taco.jpg">
+				</div>
+				<p class="nombrePlato">Taco HOT-HOT</p>
+				<p class="precioPlato">5,49 €</p>
+			</div>
+			<div class="plato">
+				<div class="imgPlato">
+					<img src="media/Taco_Hot_Jalapeño.jpg">
+				</div>
+				<p class="nombrePlato">Taco Lil Jalapeño</p>
+				<p class="precioPlato">5,99 €</p>
+			</div>
+			
+		</div>
+
+		<div class="containerPestana" id="containerBurritos">
+			<div class="plato">
+				<div class="imgPlato">
+					<img src="media/Burrito1.jpg">
+				</div>
+				<p class="nombrePlato">Burrito Clásico</p>
+				<p class="precioPlato">4,99 €</p>
+			</div>
+			<div class="plato">
+				<div class="imgPlato">
+					<img src="media/Burrito2.jpg">
+				</div>
+				<p class="nombrePlato">Burrito Juicy</p>
+				<p class="precioPlato">5,99 €</p>
+			</div>
+			<div class="plato">
+				<div class="imgPlato">
+					<img src="media/Burrito3.jpg">
+				</div>
+				<p class="nombrePlato">Burrito VIC</p>
+				<p class="precioPlato">5,49 €</p>
+			</div>
+			<div class="plato">
+				<div class="imgPlato">
+					<img src="media/Burrito4.jpg">
+				</div>
+				<p class="nombrePlato">Burrito Sweet-Mango</p>
+				<p class="precioPlato">6,49 €</p>
+			</div>
+			<div class="plato">
+				<div class="imgPlato">
+					<img src="media/Burrito5.jpg">
+				</div>
+				<p class="nombrePlato">Mini-Burritos</p>
+				<p class="precioPlato">5,49 €</p>
+			</div>
+			<div class="plato">
+				<div class="imgPlato">
+					<img src="media/Burrito6.jpg">
+				</div>
+				<p class="nombrePlato">Burrito Birria</p>
+				<p class="precioPlato">5,99 €</p>
+			</div>
+			
+		</div>
+
+		<div class="containerPestana" id="containerPostres">
+			<div class="plato">
+				<div class="imgPlato">
+					<img src="media/Postre1.jpg">
+				</div>
+				<p class="nombrePlato">Tarta de Cerezas</p>
+				<p class="precioPlato">4,99 €</p>
+			</div>
+			<div class="plato">
+				<div class="imgPlato">
+					<img src="media/Postre2.jpg">
+				</div>
+				<p class="nombrePlato">Tarta de Mango</p>
+				<p class="precioPlato">5,99 €</p>
+			</div>
+			<div class="plato">
+				<div class="imgPlato">
+					<img src="media/Postre3.jpg">
+				</div>
+				<p class="nombrePlato">Tarrina VIC</p>
+				<p class="precioPlato">5,49 €</p>
+			</div>
+			<div class="plato">
+				<div class="imgPlato">
+					<img src="media/Postre4.jpg">
+				</div>
+				<p class="nombrePlato">Flan de Leche</p>
+				<p class="precioPlato">6,49 €</p>
+			</div>
+			<div class="plato">
+				<div class="imgPlato">
+					<img src="media/Postre5.jpg">
+				</div>
+				<p class="nombrePlato">Arroz con Leche</p>
+				<p class="precioPlato">5,49 €</p>
+			</div>
+			<div class="plato">
+				<div class="imgPlato">
+					<img src="media/Postre6.jpg">
+				</div>
+				<p class="nombrePlato">Tiramisú MEX</p>
+				<p class="precioPlato">5,99 €</p>
+			</div>
+			
+		</div>
+
+	</section>
+		
+
+	<section id="reserva">
+
+		<h2 data-aos="fade-left" class="tituloSeccionOscura">Reserva y Contacto</h2>
+
+		<div id="containerReserva">
+			<iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.6900023758535!2d2.1259327858915977!3d41.37289271048022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4988d6d564af1%3A0x5c935181a7e9355a!2sCarrer%20de%20Sant%20Frederic%2C%20Sants-Montju%C3%AFc%2C%2008028%20Barcelona!5e0!3m2!1ses!2ses!4v1742321387547!5m2!1ses!2ses" width="720" height="510" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<form id="formulario">
+				<input id="formNombre" type="text" name="nombreAp" placeholder="Nombre y apellidos" required>
+				<input id="formNum" type="number" name="numero" placeholder="Número de comensales" required>
+				<input id="formFecha" type="date" name="fecha" placeholder="Fecha (dd/mm/aa)" required>
+				<input id="formTelf"type="number" name="telf" placeholder="Teléfono" required>
+				<input id="enviar" type="button" onclick="modalReserva()" value="Enviar">
+			</form>
+		</div>
+
+		<div id="modalForm">
+		<div id="modalReserva">
+			<h1 id="tituloReserva">RESERVA CONFIRMADA</h1>
+			<p id="msgReserva">En esta sección de texto irá la información recogida en el formulario con la confirmación de reserva</p>
+			<button onclick="closeModalR()">Aceptar</button>
+		</div>
+	</div>
+		
+	</section>
+
+	<section id="galeria">
+
+		<h2  data-aos="fade-right" class="tituloSeccionClara">Galería</h2>
+
+		<div id="containerImgGaleria">
+			<div class="imgGaleria">
+				<img src="media/Galeria1.jpg">
+			</div>
+			<div class="imgGaleria">
+				<img src="media/Galeria2.jpg">
+			</div>
+			<div class="imgGaleria">
+				<img src="media/Galeria3.jpg">
+			</div>
+			<div class="imgGaleria">
+				<img src="media/Galeria1.jpg">
+			</div>
+			<div class="imgGaleria">
+				<img src="media/Galeria3.jpg">
+			</div>
+			<div class="imgGaleria">
+				<img src="media/Galeria1.jpg">
+			</div>
+			<div class="imgGaleria">
+				<img src="media/Galeria2.jpg">
+			</div>
+			<div class="imgGaleria">
+				<img src="media/Galeria3.jpg">
+			</div>
+			<div class="imgGaleria">
+				<img src="media/Galeria2.jpg">
+			</div>
+			<div class="imgGaleria">
+				<img src="media/Galeria1.jpg">
+			</div>
+			<div class="imgGaleria">
+				<img src="media/Galeria3.jpg">
+			</div>
+			<div class="imgGaleria">
+				<img src="media/Galeria2.jpg">
+			</div>
+		</div>
+
+		<div id="modalLightBox">
+			<div id="modalFoto">
+			
+			</div>
+			<button class="lbBoton lbbIzquierda" onclick="prevImgGal()"><i class="fa-solid fa-angle-left"></i></button>
+			<button class="lbBoton lbbDerecha" onclick="nextImgGal()"><i class="fa-solid fa-angle-right"></i></button>
+		</div>
+
+
+		
+	</section>
+
+	<section id="filosofia">
+
+		<h2 data-aos="fade-left" class="tituloSeccionOscura">Filosofía</h2>
+		<div id="contenedorFilosofia">
+			
+			<div class="columnaFilo">
+				<p id="textoFilo">
+					Siempre hemos apostado por el producto local y por las grandes materias primas que nos ofrece nuestra tierra, es por eso que todos los alimentos que utilizamos en la elaboración de nuestras tortillas y todos los vegetales y productos cárnicos de nuestros Tacos son de proximidad. 
+					<br> 
+					<br>
+					Apostamos por nuestra tierra para dar lo mejor a nuestros clientes y ofrecerles las mejores sensaciones y momentos en nuestro local en Vic, así como en nuestras taquerías pop-up en Aiguafreda y Torelló. Los tacos, picantes, y los productos, de casa.
+
+
+				</p>
+			</div>
+			<div class="columnaFilo">
+				<video src="media/video_tacos_vic.mp4" id="videoFilo" poster="media/PortadaVideo.jpg" controls muted></video>
+				
+			</div>
+
+		</div>
+		
+	</section>
+
+	
+
+	<footer id="pie">
+			<i class="fa-brands fa-facebook-f"></i>
+			<i class="fa-brands fa-instagram"></i>
+			<i class="fa-brands fa-x-twitter"></i>
+	</footer>
+
+<script>
+	modalWelcome();
+	setInterval(carruselAnim,4000);
+	AOS.init();
+	finalLightBox();
+
+
+
+</script>
+
+	
+</body>
+</html>
